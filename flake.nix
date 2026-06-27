@@ -6,7 +6,7 @@
     flake-utils.url = "github:numtide/flake-utils";
 
     userver-src = {
-      url = "github:userver-framework/userver/v3.0"
+      url = "github:userver-framework/userver/v3.0";
       flake = false;
     };
   };
@@ -209,6 +209,7 @@
             cmakeFlags = cmakeFeatureFlags ++ [
               "-DUSERVER_PYTHON_PATH=${chaoticPython}/bin/python3"
               "-DUSERVER_PIP_USE_SYSTEM_PACKAGES=ON"
+              "-DUSERVER_PIP_OPTIONS=--no-index"
               "-DUSERVER_INSTALL=ON"
               "-DUSERVER_BUILD_TESTS=OFF"
               "-DUSERVER_BUILD_SAMPLES=OFF"
