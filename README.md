@@ -1,8 +1,7 @@
 # Note
 
-<div style="border: 2px solid red; padding: 10px;">
-    This file and flake.nix are mostly AI-generated. Do not use it as an example of "how to do it"
-</div>
+> [!WARNING]
+> This file and flake.nix are mostly AI-generated. Do not use it as an example of "how to do it"
 
 # userver-nix
 

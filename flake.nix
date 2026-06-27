@@ -101,10 +101,11 @@
             openssl
             jemalloc
             gtest
+            gbenchmark 
             re2
           ];
           chaotic     = [ ];
-          utest       = [ gtest gbenchmark ];
+          utest       = [ gtest ];
           # USERVER_FEATURE_TESTSUITE only needs python3 + dev headers
           # (python3-config) at configure time. The actual pytest/venv
           # dependencies are pulled per-service later by userver_testsuite_add,
