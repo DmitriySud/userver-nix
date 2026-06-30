@@ -87,7 +87,7 @@
         # corresponding USERVER_FEATURE expects to find rather than download).
         featureDeps = with pkgs; {
           core = [
-            boost         # context / coroutine2 / stacktrace
+            boost183         # context / coroutine2 / stacktrace
             fmt
             cctz
             libev
